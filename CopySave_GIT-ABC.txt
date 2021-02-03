@@ -1,0 +1,184 @@
+// PseudoCódgigo: É uma forma genérica de escrever um algorítimo utilizando uma linguagem simples
+
+//01--------------------------------------------------------------------
+//Comandos básicos git
+
+	//Inicia um repositório
+git init
+
+	//Copia um código
+git clone
+
+	//Adiciona e Monitora um arquivo no repositório Github
+git add . ou git add <<nome_arquivo>>
+
+	//Fazer um upload dos arquivos para um banco de dados. Fazer um conjunto de mudanças. Serve para publicar todos os que estão no Github.
+
+git commit -m 'mensagem de commit'
+	//Publicar em servidor remoto
+git push
+
+	//Pegar comandos para juntar/atualizar o código
+git pull
+
+	//Resolução de conflitos
+git merge
+
+	//Informações sobre o projeto
+git status
+
+	//Histórico do projeto (O id, a branch, a data, o e-mail e o nome do autor.)
+git log
+
+	//Cria um novo ramo e visualiza todas as branchs
+git branch <<nome_da_branch>>
+
+//Visite https://git-scm.com/docs
+	
+//02-------------------------------------------------------------------- 
+
+//Utilizando comandos GIT em um projeto de software
+
+	//Crie um repositório GIT e inicializá-lo (prompt de comando)
+
+// Cria diretório
+mkdir projeto-curso-git
+//Acessao diretório acessando o CD
+cd projeto-curso-git
+//Comando GIT que inicia o repositório vazio
+git init
+
+	//Verificar o Estado que encontra o repositório
+
+git status
+
+	//Touch é um comando para Linux para criar um diretório
+//Comando que mostrou na aula que o 'index.html' em vermelho. Que significa que existe um arquivo não monitorado.
+
+touch index.html
+git status
+
+	//Criando arquivo e verificando o estatus em um repositório GIT
+//Comando mostrou mensagem em verde "new file: index.html".
+git add.
+git add index.html
+git status
+
+	//Comitando em um repositótio Git. Comitar alterações significa salvar o estado em que o código fonte está naquele momento, evitando que
+trabalhos sejam perdidos. É possível por ele, identificar todo o percurso de alteração do código fonte.Mensagens de commit e pequenos commits são importantes.
+
+git commit-m 'Meu primeiro comando'
+
+	//Verificar o histórico de commits. Commits que o projeto sofreu. Retorna histórico.
+
+git log
+
+//03-----------------------------------------------------------------
+	//Iniciar
+ls
+
+	//remove uma origem remota
+
+git remote rm origin
+
+	//Conectar meu repositório a um servidor remoto
+
+git remote add origin
+
+	//Enviar para o diretório remoto todos os commits locais, igualando as informações.
+
+git push -u origin master
+git add
+//04-----------------------------------------------------------------
+	//Adicionar o arquivo em formato de commit para enviar para o repositório remoto
+git add index.html
+
+//Quando realizo alterações em meu código é desejavel eu adicionar o arquivo alterado e enviar essas alterações para o GitHub 
+git add index.html
+git commit -m 'minha alteração'
+git push.
+
+//05------------------------BRANCH-----------------------------------
+	//Branch são ramos. Git trabalha com ramificações. Todos os commits que fazendo eles criam uma árvore de grafos. Quando quero criar uma alteração, ele gera uma nova. Permite que diferentes versões do mesmo conteúdo se desenvolvam ao mesmo tempo, porém de forma independete, quando você recombina periodicamenre as contribuições de diferentes branches em um processo chamado de 'fusão' merging. (GIT Guia prático, O'relly).
+
+	//Mostra uma coleção de Branchs
+git branch
+
+	//Troca de branch
+git checkout <<nome da branch>>
+
+	//Criar um Branch com nome. O que acontece quando uma branch é criada? Todos os arquivos que estão na branch master são clonados para a nova branch.
+
+git branch <<nome da branch>>
+
+	//Pega o nome da branch e troca o origin. Troca de Branch.  criar uma branch e já ir para essa nova branch
+
+git checkout -b <<nome da branch>>
+
+	//Deletar uma Branch
+git branch -D <<nome da branch>>
+
+	//O comando 'touch' cria um novo arquivo
+touch <<nome do arquivo>>
+
+
+//06----------------------------------------------------------------
+
+	//Envia branch do repositório local para remoto
+
+git push origin <<nome da branch>>
+
+	//Juntar arquivos de duas branches
+
+git rebase NOME_DO_ARQUIVO
+
+	//Deploy= Colocar o projeto em produção
+
+	//Marca compromissos específicos. Cria tag.
+git tag 'nome da tag'
+
+	//Deleta tag
+git tag -d <<nome da tag>>
+
+	//consultar os commits, e suas estatísticas abreviadas
+git log --stat
+
+	//adicionar um arquivo e fazer o commit em apenas um passo
+git commit -a -m <comentário>
+
+//07-----------------------------------------------------------
+
+	// Mescla alterações de uma branch ativa
+git merge <<nome da branch>>
+
+
+	//retirar um arquivo adicionado para commitar (após utilizar git add)
+git reset HEAD NOME_DO_ARQUIVO
+
+
+	//resetar' as alterações de um arquivo
+git checkout -- NOME_DO_ARQUIVO
+
+	//ver as modificações feitas no arquivo
+git diff NOME_DO_ARQUIVO
+
+	//editar a mensagem do último commit
+git commit --amend
+
+	// alterando o ultimo nome
+git commit --amend -m "nome do novo arquivo"
+
+
+	//configurar usuario e e-mail na sua máquina
+git config --global user.name "SEU NOME" - git config --global user.email "SEU ENDEREÇO DE E-MAIL"
+
+	//enviar a nossa branch do repositório local para o repositório remoto
+git push origin NOME_DA_BRANCH
+
+	//comando para sair da tela de edição de texto commit (--amend)
+
+:wq
+
+
+
+

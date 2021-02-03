@@ -1,0 +1,177 @@
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ ls
+a.html  b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Deise Kinsk/Documents/GITLEARN/aprendendoGit/.git/
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ ls
+a.html  b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ ls -a
+./  ../  .git/  a.html  b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ touch
+touch: missing file operand
+Try 'touch --help' for more information.
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ touch c.txt
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        c.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git add .
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   c.txt
+
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git commit -m "Criando o arquivo c.txt"
+[master 9f850ef] Criando o arquivo c.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 c.txt
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git log
+commit 9f850ef120af740eae3acf953e676adbd810a16d (HEAD -> master)
+Author: Deise Kinsk <kinsk@msn.com>
+Date:   Fri Jul 10 20:01:34 2020 -0300
+
+    Criando o arquivo c.txt
+
+commit 0b495dc40acaa39627ea79e76059baeae22bac6c
+Author: Deise Kinsk <kinsk@msn.com>
+Date:   Fri Jul 10 19:53:57 2020 -0300
+
+    Criando a.html e b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ code .
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   c.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   c.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git commit -m "Modificando o arquivo c.txt"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   c.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   c.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git add .
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   c.txt
+
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git commit -m "Modifica c.txt"
+[master 04bc6d3] Modifica c.txt
+ 1 file changed, 1 insertion(+)
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git log
+commit 04bc6d3658b2c00b8d453bb6f69d3b72cc3f7618 (HEAD -> master)
+Author: Deise Kinsk <kinsk@msn.com>
+Date:   Fri Jul 10 20:07:39 2020 -0300
+
+    Modifica c.txt
+
+commit 9f850ef120af740eae3acf953e676adbd810a16d
+Author: Deise Kinsk <kinsk@msn.com>
+Date:   Fri Jul 10 20:01:34 2020 -0300
+
+    Criando o arquivo c.txt
+
+commit 0b495dc40acaa39627ea79e76059baeae22bac6c
+Author: Deise Kinsk <kinsk@msn.com>
+Date:   Fri Jul 10 19:53:57 2020 -0300
+
+    Criando a.html e b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git log --oneline
+04bc6d3 (HEAD -> master) Modifica c.txt
+9f850ef Criando o arquivo c.txt
+0b495dc Criando a.html e b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ ^C
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$

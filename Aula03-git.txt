@@ -1,0 +1,329 @@
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ git log
+commit 04bc6d3658b2c00b8d453bb6f69d3b72cc3f7618 (HEAD -> master)
+Author: Deise Kinsk <kinsk@msn.com>
+Date:   Fri Jul 10 20:07:39 2020 -0300
+
+    Modifica c.txt
+
+commit 9f850ef120af740eae3acf953e676adbd810a16d
+Author: Deise Kinsk <kinsk@msn.com>
+Date:   Fri Jul 10 20:01:34 2020 -0300
+
+    Criando o arquivo c.txt
+
+commit 0b495dc40acaa39627ea79e76059baeae22bac6c
+Author: Deise Kinsk <kinsk@msn.com>
+Date:   Fri Jul 10 19:53:57 2020 -0300
+
+    Criando a.html e b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ git log --oneline
+04bc6d3 (HEAD -> master) Modifica c.txt
+9f850ef Criando o arquivo c.txt
+0b495dc Criando a.html e b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ git log --graph
+* commit 04bc6d3658b2c00b8d453bb6f69d3b72cc3f7618 (HEAD -> master)
+| Author: Deise Kinsk <kinsk@msn.com>
+| Date:   Fri Jul 10 20:07:39 2020 -0300
+|
+|     Modifica c.txt
+|
+* commit 9f850ef120af740eae3acf953e676adbd810a16d
+| Author: Deise Kinsk <kinsk@msn.com>
+| Date:   Fri Jul 10 20:01:34 2020 -0300
+|
+|     Criando o arquivo c.txt
+|
+* commit 0b495dc40acaa39627ea79e76059baeae22bac6c
+  Author: Deise Kinsk <kinsk@msn.com>
+  Date:   Fri Jul 10 19:53:57 2020 -0300
+
+      Criando a.html e b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ git log --oneline --graph
+* 04bc6d3 (HEAD -> master) Modifica c.txt
+* 9f850ef Criando o arquivo c.txt
+* 0b495dc Criando a.html e b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ code .
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working direct
+        modified:   c.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ git log
+commit 04bc6d3658b2c00b8d453bb6f69d3b72cc3f7618 (HEAD -> master)
+Author: Deise Kinsk <kinsk@msn.com>
+Date:   Fri Jul 10 20:07:39 2020 -0300
+
+    Modifica c.txt
+
+commit 9f850ef120af740eae3acf953e676adbd810a16d
+Author: Deise Kinsk <kinsk@msn.com>
+Date:   Fri Jul 10 20:01:34 2020 -0300
+
+    Criando o arquivo c.txt
+
+commit 0b495dc40acaa39627ea79e76059baeae22bac6c
+Author: Deise Kinsk <kinsk@msn.com>
+Date:   Fri Jul 10 19:53:57 2020 -0300
+
+    Criando a.html e b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ git commit -am "teste de alteração 02 em c.txt"
+warning: CRLF will be replaced by LF in c.txt.
+The file will have its original line endings in your working direct
+[master 3ce371e] teste de alteração 02 em c.txt
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ gis status
+bash: gis: command not found
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ git log --graph
+* commit 3ce371ecfd852c8dbbfe5eb37db5c959852dc344 (HEAD -> master)
+| Author: Deise Kinsk <kinsk@msn.com>
+| Date:   Fri Jul 10 20:19:33 2020 -0300
+|
+|     teste de alteração 02 em c.txt
+|
+* commit 04bc6d3658b2c00b8d453bb6f69d3b72cc3f7618
+| Author: Deise Kinsk <kinsk@msn.com>
+| Date:   Fri Jul 10 20:07:39 2020 -0300
+|
+|     Modifica c.txt
+|
+* commit 9f850ef120af740eae3acf953e676adbd810a16d
+| Author: Deise Kinsk <kinsk@msn.com>
+| Date:   Fri Jul 10 20:01:34 2020 -0300
+|
+|     Criando o arquivo c.txt
+|
+* commit 0b495dc40acaa39627ea79e76059baeae22bac6c
+  Author: Deise Kinsk <kinsk@msn.com>
+  Date:   Fri Jul 10 19:53:57 2020 -0300
+
+      Criando a.html e b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ git branch
+* master
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ code .
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ ls
+a.html  b.css  c.txt
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ git log --oneline
+3ce371e (HEAD -> master) teste de alteração 02 em c.txt
+04bc6d3 Modifica c.txt
+9f850ef Criando o arquivo c.txt
+0b495dc Criando a.html e b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi
+$ git checkout 9f850ef
+Note: switching to '9f850ef'.
+
+You are in 'detached HEAD' state. You can look around, make experim
+changes and commit them, and you can discard any commits you make i
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, yo
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead
+
+HEAD is now at 9f850ef Criando o arquivo c.txt
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGi.))
+$ git log --oneline
+9f850ef (HEAD) Criando o arquivo c.txt
+0b495dc Criando a.html e b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit ((9f850ef...))
+$ git branch
+* (HEAD detached at 9f850ef)
+  master
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit ((9f850ef...))
+$ git checkout master
+Previous HEAD position was 9f850ef Criando o arquivo c.txt
+Switched to branch 'master'
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git log --oneline
+3ce371e (HEAD -> master) teste de alteração 02 em c.txt
+04bc6d3 Modifica c.txt
+9f850ef Criando o arquivo c.txt
+0b495dc Criando a.html e b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git branch
+* master
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git diff
+diff --git a/c.txt b/c.txt
+index e067378..8000a61 100644
+--- a/c.txt
++++ b/c.txt
+@@ -1,2 +1,2 @@
+-Teste de alteração o1
+-Teste de alteração 02
+\ No newline at end of file
++Teste de alteração 02
++Teste de alteração 03
+\ No newline at end of file
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   c.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git checkout c.txt
+Updated 1 path from the index
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   c.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git add c.txt
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   c.txt
+
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git diff
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   c.txt
+
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git reset HEAD
+Unstaged changes after reset:
+M       c.txt
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   c.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git diff
+diff --git a/c.txt b/c.txt
+index e067378..81c8e45 100644
+--- a/c.txt
++++ b/c.txt
+@@ -1,2 +1,2 @@
+-Teste de alteração o1
+-Teste de alteração 02
+\ No newline at end of file
++Teste de alteração 02
++Teste de alteração 04
+\ No newline at end of file
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   c.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git commit -am "removendo um commit em c.txt"
+[master 8ddab7a] removendo um commit em c.txt
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git log --oneline
+8ddab7a (HEAD -> master) removendo um commit em c.txt
+3ce371e teste de alteração 02 em c.txt
+04bc6d3 Modifica c.txt
+9f850ef Criando o arquivo c.txt
+0b495dc Criando a.html e b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git reset --hard 8ddab7a
+HEAD is now at 8ddab7a removendo um commit em c.txt
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$ git log --oneline
+8ddab7a (HEAD -> master) removendo um commit em c.txt
+3ce371e teste de alteração 02 em c.txt
+04bc6d3 Modifica c.txt
+9f850ef Criando o arquivo c.txt
+0b495dc Criando a.html e b.css
+
+Deise Kinsk@DESKTOP-KINSK MINGW64 ~/Documents/GITLEARN/aprendendoGit (master)
+$
